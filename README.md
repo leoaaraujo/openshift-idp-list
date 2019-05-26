@@ -1,14 +1,14 @@
 # Openshift Login - Identity Provider combolist
 
 
-* Para aplicar, edite o arquivo master-config.yaml:
+* For apply, edit the file master-config.yaml:
 
 ```
 vim /etc/origin/master/master-config.yaml
 ```
 
 
-* Add a linha providerSelection no arquivo master-config.yaml em todos os masters
+* Add the line providerSelection in the file master-config.yaml in all master servers
 
 ```
 oauthConfig:
@@ -17,7 +17,7 @@ oauthConfig:
 ```
 
 
-* Reinicie todos os masters para aplicar
+* Restart all master servers to apply
 
 ```
 ansible -i <inventory> masters -m shell -a "reboot"
