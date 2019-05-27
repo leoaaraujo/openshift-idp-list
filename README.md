@@ -17,7 +17,7 @@ oauthConfig:
 ```
 
 
-* Restart all master servers to apply
+* Restart all master servers 1 by 1 to apply
 
 ```
 ansible -i <inventory> masters -m shell -a "reboot"
