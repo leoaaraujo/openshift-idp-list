@@ -12,8 +12,11 @@ vim /etc/origin/master/master-config.yaml
 
 ```
 oauthConfig:
+  ....
+  sessionConfig:
+  ....
   templates:
-    providerSelection: /path/select-provider-template.html
+    providerSelection: /etc/origin/master/provider-selection-template.html
 ```
 
 
